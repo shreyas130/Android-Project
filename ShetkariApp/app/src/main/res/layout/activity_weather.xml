@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.co.vsys.shetkariapp.in.co.SMRK.shetkariapp.activity.WeatherActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:titleTextColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_backArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_arrow_back_white_24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_weather"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@+id/btn_backArrow"
+                />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/weather_back"
+        >
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_weatherCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nashik,In"
+                android:textColor="@color/toolbar_color"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_weatherDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28/8/2017"
+                android:textSize="20dp"
+                android:textColor="@color/toolbar_color"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/img_weatherIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="150"
+            >
+
+            <TextView
+                android:id="@+id/tv_minTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_min_temp"
+                android:textColor="@color/toolbar_color"
+                android:textSize="20dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_maxTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_max_temp"
+                android:layout_toRightOf="@+id/tv_minTemp"
+                android:textColor="@color/toolbar_color"
+                android:textSize="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="10"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_huminity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_huminity"
+                android:textColor="@color/toolbar_color"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/tv_maxTemp"
+                android:layout_weight="10"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="150"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_minTempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22.4°С"
+                android:textColor="@color/toolbar_color"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_maxTempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33.4°С"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/toolbar_color"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="10"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_huminity_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="77"
+                android:textColor="@color/toolbar_color"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_weatherDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sky is clear"
+                    android:textSize="20dp"
+                    android:textColor="@color/toolbar_color"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

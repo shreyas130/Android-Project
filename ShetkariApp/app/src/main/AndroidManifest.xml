@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.co.SMRK.shetkariapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.RegistrationActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.MyProfileDetailsActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.Schedule_TypeActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.SelectedNewsActivity"
+            android:theme="@style/AppTheme1" />
+
+        <meta-data
+            android:name="in.co.SMRK.shetkariapp.utlis.GlideConfiguration"
+            android:value="GlideModule" />
+
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.AllSchedulerListActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.ShowSchedulerInfoActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.NewQuestionActivity"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.GalleryActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.FullGalleryViewActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.FlashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.ViewAnswerActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.SelectCropRateActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.ViewRateActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.TermAndConditionActivity"
+            android:theme="@style/AppTheme1" />
+
+        <!-- Firebase Notifications -->
+        <service android:name="in.co.SMRK.shetkariapp.utlis.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="in.co.SMRK.shetkariapp.utlis.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.MarketRateActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.NewsActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.CropScheduleActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.MyProfileActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.AskExpertActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.WeatherActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="in.co.SMRK.shetkariapp.activity.GalleryHomeActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name="in.co.SMRK.shetkariapp.activity.AccountDetailsActivity"
+            android:theme="@style/AppTheme1"
+            ></activity>
+    </application>
+
+</manifest>

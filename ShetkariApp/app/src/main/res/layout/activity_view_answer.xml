@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.co.vsys.shetkariapp.in.co.SMRK.shetkariapp.activity.ViewAnswerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:titleTextColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_backArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_arrow_back_white_24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answerTitle"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_askQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_answerDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_askQuestion"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_questionAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/tv_answerDate"
+            android:scrollbars = "vertical"
+            android:background="@drawable/edittext_curv"
+            android:padding="10dp"
+
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

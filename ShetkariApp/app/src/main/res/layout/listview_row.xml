@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/img_news"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/image_bg"
+        android:layout_alignParentLeft="true"
+        android:padding="3dp"
+        android:layout_marginRight="5dip"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_newsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/img_news"
+        android:layout_centerInParent="true"
+        android:text="adfsdfsdfadfadfadf"
+        android:textColor="@color/colorText"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:typeface="sans"
+        android:layout_below="@+id/tv_newsTitle"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@+id/img_news"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_share"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

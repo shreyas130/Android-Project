@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.co.SMRK.shetkariapp.utlis.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_curv"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logoo"
+        android:padding="10dp"
+        />
+
+</in.co.SMRK.shetkariapp.utlis.SquareLayout>

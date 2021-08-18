@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="in.co.vsys.shetkariapp.in.co.SMRK.shetkariapp.activity.RegistrationActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/reg_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/sd"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:visibility="visible"
+                />
+
+            <RelativeLayout
+                android:id="@+id/mobile_No_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/reg_logo"
+                >
+
+                <EditText
+                    android:id="@+id/edt_reg_MobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="number"
+                    android:hint="@string/enter_mobile"
+                    android:background="@drawable/edittext_curv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:layout_marginBottom="70dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/edt_reg_MobileNo"
+                    >
+                    <Button
+                        android:id="@+id/btn_reg_Login"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_reg_MobileNo"
+                        android:text="@string/login"
+                        android:background="@drawable/edittext_curv"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_reg_signUp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_curv"
+                        android:layout_marginLeft="10dp"
+
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/state_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+
+                >
+
+                <EditText
+                    android:id="@+id/edt_signUp_Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="number"
+                    android:hint="@string/enter_mobile"
+                    android:background="@drawable/edittext_curv"
+                    android:ems="10"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/lin1"
+                    android:layout_below="@+id/edt_signUp_Mobile"
+                    >
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:ms_arrowColor="@color/colorPrimary"
+                        app:ms_arrowSize="16dp"
+                        app:ms_floatingLabelText="@string/state"
+                        app:ms_hint="@string/select_state"
+
+                        >
+
+                    </fr.ganfra.materialspinner.MaterialSpinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/lin2"
+                    android:layout_below="@id/lin1"
+                    >
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:ms_arrowColor="@color/colorPrimary"
+                        app:ms_arrowSize="16dp"
+                        app:ms_floatingLabelText="@string/district"
+                        app:ms_hint="@string/select_district"
+
+                        >
+
+                    </fr.ganfra.materialspinner.MaterialSpinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/lin3"
+                    android:layout_below="@id/lin2"
+                    >
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_taluka"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:ms_arrowColor="@color/colorPrimary"
+                        app:ms_arrowSize="16dp"
+                        app:ms_floatingLabelText="@string/taluka"
+                        app:ms_hint="@string/select_taluka"
+                        >
+
+                    </fr.ganfra.materialspinner.MaterialSpinner>
+
+                 </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/lin4"
+                    android:layout_below="@+id/lin3"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/edt_userVillage"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:hint="@string/gav"
+                        android:drawableLeft="@mipmap/ic_action_location_on"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:windowSoftInputMode="stateHidden"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_curv"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_reg_Next"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin4"
+                    android:text="@string/sign_in"
+                    android:background="@drawable/edittext_curv"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+
+                    />
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/otp_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/reg_logo"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+
+                <EditText
+                    android:id="@+id/edt_reg_OTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="number"
+                    android:hint="@string/enter_otp"
+                    android:background="@drawable/edittext_curv"
+                    android:ems="10"
+                    android:gravity="center"
+                   />
+
+
+                <Button
+                    android:id="@+id/btn_reg_OTP_Submit"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:background="@drawable/edittext_curv"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/edt_reg_OTP"
+                    android:layout_centerInParent="true"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>

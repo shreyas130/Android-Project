@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.co.vsys.shetkariapp.in.co.SMRK.shetkariapp.activity.Schedule_TypeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:titleTextColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_backArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_arrow_back_white_24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_manage_crop"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        >
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_cropManage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:ms_arrowColor="@color/colorPrimary"
+            app:ms_arrowSize="16dp"
+            app:ms_floatingLabelText="@string/title_manage"
+            app:ms_hint="@string/select_manage"
+            >
+
+        </fr.ganfra.materialspinner.MaterialSpinner>
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spinner_cropManage"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_typeOfSoil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/typesOfSoil"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+
+            />
+
+        <ListView
+            android:id="@+id/list_types_manage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector"
+            android:layout_below="@+id/tv_typeOfSoil"
+            >
+
+        </ListView>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

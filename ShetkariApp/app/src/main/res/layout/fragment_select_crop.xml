@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="in.co.vsys.shetkariapp.in.co.SMRK.shetkariapp.fragment.SelectCropManageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_cropManage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:ms_arrowColor="@color/colorPrimary"
+            app:ms_arrowSize="16dp"
+            app:ms_floatingLabelText="@string/title_manage"
+            app:ms_hint="@string/select_manage"
+            >
+
+        </fr.ganfra.materialspinner.MaterialSpinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <ListView
+            android:id="@+id/list_types_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorDivider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

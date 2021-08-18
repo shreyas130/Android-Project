@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.co.vsys.shetkariapp.in.co.SMRK.shetkariapp.activity.TermAndConditionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:titleTextColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/ic_arrow_back_white_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_condition"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/btn_backArrow"
+            />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/term_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/toolbar"
+        >
+
+        <TextView
+            android:id="@+id/tv_termTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="24dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_otherText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_below="@+id/tv_termTitle"
+            android:layout_marginLeft="15dp"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

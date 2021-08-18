@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="in.co.vsys.shetkariapp.in.co.SMRK.shetkariapp.fragment.BhavFragment">
+
+    <GridView
+        android:id="@+id/grid_bhav_cropList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:columnWidth="90dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        >
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/tv_AddCrop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/toolbar_color"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

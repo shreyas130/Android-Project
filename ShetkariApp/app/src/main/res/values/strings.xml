@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Green Garden </string>
+    <string name="please_wait">कृपया प्रतीक्षा करा</string>
+    <string name="no_connection">इंटरनेट सेवा बंद आहे</string>
+    <string name="yes">होय</string>
+    <string name="no">नाही</string>
+
+    <!-- validation  -->
+
+    <string name="userName">नाव</string>
+    <string name="name">अचूक नाव लिहा</string>
+    <string name="mobile_no">अचूक मोबाईल नं.टाका</string>
+    <string name="village">अचूक गावाचे नाव टाका</string>
+    <string name="text_message">संदेश लिहा</string>
+    <string name="enter_mobile">मोबाईल नंबर टाका </string>
+    <string name="login">लॉगीन करा</string>
+    <string name="sign_up">साईन अप</string>
+    <string name="sign_in">साईन इन</string>
+    <string name="submit">सबमिट</string>
+    <string name="enter_otp">OTP टाका</string>
+    <string name="update_profile">अपडेट करा</string>
+    <!-- toolbar title -->
+
+    <string name="new_question">नवीन प्रश्न </string>
+    <string name="gallery_title">गॅलरी</string>
+    <string name="answerTitle">प्रश्न आणि उत्तर</string>
+    <!-- navigation header  string......-->
+
+    <string name="title_rate">बाजारभाव</string>
+    <string name="title_weather">हवामान</string>
+    <string name="title_news">बातम्या</string>
+    <string name="title_profile">माझे प्रोफाईल</string>
+    <string name="title_manage_crop">पिक नियोजन</string>
+    <string name="title_technician">तज्ज्ञना विचारा</string>
+    <string name="all_question">विचारलेले प्रश्न</string>
+    <string name="title_tool_buy">स्मार्ट टूल्स खरेदी \n \t\t\tकरा</string>
+    <string name="title_condition">नियम व अटी </string>
+    <string name="title_gallery">गॅलरी</string>
+    <string name="title_acc">बँक अकाऊंट तपशिल</string>
+    <string name="title_other">इतर</string>
+    <string name="title_share">शेयर करा</string>
+    <string name="title_testimonial">आमचा विषेयी</string>
+    <string name="title_schedule">\tपिक \nव्यवस्थापन</string>
+    <string name="typesOfSoil">मातीचे प्रकार निवडा</string>
+    <string name="sprayType">फवारणीचे प्रकार निवडा</string>
+    <string name="select_sechedule">नियोजन निवडा</string>
+
+    <!-- other  string......-->
+    <string name="long_info">सविस्तर बातमी</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="term_condition">By registering, you are agreeing to our</string>
+    <string name="my_smart_tools">माय स्मार्ट टूल्स</string>
+    <string name="buy_selling_details">खरेदी-विक्री तपशिल</string>
+
+    <!-- user profile string.....  -->
+    <string name="personal_details">वैयक्तिक तपशिल</string>
+    <string name="mobile_number">फोन नंबर</string>
+    <string name="first_name">प्रथम नाव</string>
+    <string name="last_name">आडनाव</string>
+    <string name="birth_date">जन्मतारीख</string>
+
+    <string name="address_details">स्थान तपशिल</string>
+    <string name="all_schedule">सर्व व्यवस्थापन</string>
+
+
+    <!-- crop related strings-->
+
+    <string name="tamato">टोमॅटो</string>
+    <string name="minumum_rate">किमान भाव</string>
+    <string name="maximum_rate">कमाल भाव</string>
+    <string name="title_huminity">आर्द्रता </string>
+    <string name="share">शेयर \t</string>
+    <string name="select_market">बाजार निवडा</string>
+    <string name="selected_market">निवडलेले बाजार</string>
+    <string name="select_crop">पिक निवडा</string>
+    <string name="selected_crop">निवडलेले पिक </string>
+    <string name="my_crop">माझे पिके</string>
+    <string name="crop">पिके</string>
+    <string name="title_max">कमाल (प्रती १० किलो)</string>
+    <string name="title_min">किमान (प्रती १० किलो)</string>
+    <string name="title_min_temp">किमान</string>
+    <string name="title_max_temp">कमाल</string>
+
+
+    <!-- textview  string......-->
+
+    <string name="select_state">राज्य निवडा</string>
+    <string name="select_district">जिल्हा निवडा</string>
+    <string name="select_taluka">तालूका निवडा</string>
+
+
+    <!-- button string......-->
+
+    <string name="btn_registration">नोंदणी करा</string>
+    <string name="btn_change_profile" translatable="false">तपशिल बदला</string>
+    <string name="btn_save">साठवून ठेवा</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- validate string -->
+
+    <string name="err_msg_name">Invalide</string>
+
+    <!-- spinner string....-->
+
+    <string name="state">राज्य</string>
+    <string name="district">जिल्हा</string>
+    <string name="taluka">तालूका</string>
+    <string name="gav">गाव</string>
+    <string name="title_manage">व्यवस्थापन</string>
+    <string name="select_manage">व्यवस्थापन निवडा</string>
+
+    <string name="maha">महाराष्ट्र</string>
+
+    <string name="mumbai">मुंबई</string>
+    <string name="pune">पुणे</string>
+    <string name="nashik">नाशिक</string>
+    <string name="kolhapur">कोल्हापूर</string>
+
+
+    <string-array name="states">
+        <item>@string/maha</item>
+
+    </string-array>
+
+    <string-array name="district">
+
+        <item>@string/mumbai</item>
+        <item>@string/pune</item>
+        <item>@string/nashik</item>
+        <item>@string/kolhapur</item>
+    </string-array>
+
+</resources>

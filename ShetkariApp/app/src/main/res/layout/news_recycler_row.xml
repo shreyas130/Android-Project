@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/market_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="0dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/card_main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nashik"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_news_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11 Aug"
+                android:layout_below="@+id/tv_city"
+                android:textSize="13dp"
+                android:layout_marginLeft="3dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_max_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="39"
+                android:layout_below="@+id/tv_news_date"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:textSize="50dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_sla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_news_date"
+                android:layout_toRightOf="@+id/tv_max_sel"
+                android:layout_marginLeft="3dp"/>
+
+            <TextView
+                android:id="@+id/tv_man_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21C"
+                android:layout_below="@+id/tv_news_date"
+                android:layout_marginTop="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/tv_sla"
+                android:layout_marginLeft="3dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_huminity"
+                android:layout_below="@+id/tv_man_sel"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_huminity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_man_sel"
+                android:layout_toRightOf="@+id/tv_hum"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="18%"
+                />
+
+            <TextView
+                android:id="@+id/news_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today sky is clear"
+                android:layout_below="@+id/tv_hum"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:id="@+id/rate_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/news_status">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_share_marketRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                android:layout_below="@+id/rate_view"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:drawableRight="@drawable/icon_share_small"
+                android:textSize="15dp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

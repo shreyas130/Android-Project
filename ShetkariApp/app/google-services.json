@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "600016399153",
+    "firebase_url": "https://greenlineapp-a6870.firebaseio.com",
+    "project_id": "greenlineapp-a6870",
+    "storage_bucket": "greenlineapp-a6870.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600016399153:android:da29d71617e46809",
+        "android_client_info": {
+          "package_name": "in.co.vsys.shetkariapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600016399153-vef0jgtldilh7k2a37pot79fefo2rjqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVbMiHBDFVJ_tQpzT8VxxYX6s82UcWGLM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

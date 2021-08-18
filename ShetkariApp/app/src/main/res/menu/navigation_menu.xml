@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/nav1"
+                android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home"
+            android:title="@string/app_name"
+            android:icon="@drawable/icon_home"
+            />
+
+
+        <item
+            android:id="@+id/nav_expert_ask"
+            android:icon="@drawable/icon_expert"
+            android:title="@string/title_technician"
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/title_gallery"
+            android:icon="@drawable/icon_gallery"
+            />
+
+
+    </group>
+
+
+    <item android:title="@string/title_other">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/icon_account"
+                android:title="@string/title_acc"/>
+
+            <item
+                android:id="@+id/nav_condition"
+                android:icon="@drawable/icon_condition"
+                android:title="@string/title_condition" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/icon_share"
+                android:title="@string/title_share"/>
+
+        </menu>
+
+    </item>
+
+</menu>
